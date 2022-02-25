@@ -1,0 +1,14 @@
+server:
+  port: 7000
+spring:
+  datasource:
+    driverClassName: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://117.50.177.9:3306/mall_sms?useUnicode=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=Asia/Shanghai
+    username: root
+    password: rootroot123!
+#    cloud:
+#      nacos:
+#        discovery:
+#          server-addr: localhost:8848
+  application:
+    name: mall_coupon

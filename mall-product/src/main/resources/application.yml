@@ -1,0 +1,9 @@
+server:
+  port: 10000
+
+spring:
+  datasource:
+    driverClassName: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://117.50.177.9:3306/pms?socketTimeout=60000&connectTimeout=30000&serverTimezone=UTC
+    username: root
+    password: rootroot123!
