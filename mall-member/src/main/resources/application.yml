@@ -2,7 +2,7 @@ server:
   port: 8000
 spring:
   application:
-    name: mall_member
+    name: mall-member
   datasource:
     driverClassName: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://117.50.177.9:3306/mall_ums?socketTimeout=60000&connectTimeout=30000&serverTimezone=UTC

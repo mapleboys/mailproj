@@ -5,6 +5,8 @@ import com.example.common.utils.R;
 import com.example.mall.order.entity.OrderEntity;
 import com.example.mall.order.service.OrderService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.Arrays;
@@ -20,10 +22,19 @@ import java.util.Map;
  * @date 2022-02-25 09:52:18
  */
 @RestController
+@RefreshScope
 @RequestMapping("order/order")
 public class OrderController {
     @Autowired
     private OrderService orderService;
+
+    @Value("${mall.coupon.test.name}")
+    private String name;
+
+    @RequestMapping("/list/test")
+    public R test() {
+        return R.ok().put("name", name);
+    }
 
     /**
      * 列表

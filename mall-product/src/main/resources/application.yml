@@ -14,7 +14,7 @@ spring:
         username: nacos
         password: nacos
   application:
-    name: mall_product
+    name: mall-product
 
 
 mybatis-plus:

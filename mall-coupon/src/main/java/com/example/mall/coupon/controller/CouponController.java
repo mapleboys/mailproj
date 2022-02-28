@@ -5,6 +5,8 @@ import com.example.common.utils.R;
 import com.example.mall.coupon.entity.CouponEntity;
 import com.example.mall.coupon.service.CouponService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.Arrays;
@@ -20,16 +22,20 @@ import java.util.Map;
  * @date 2022-02-25 09:47:32
  */
 @RestController
+@RefreshScope
 @RequestMapping("coupon/coupon")
 public class CouponController {
     @Autowired
     private CouponService couponService;
 
+    @Value("${mall.coupon.test.name}")
+    private String name;
+
     @RequestMapping("/member/list")
     public R memberCoupon() {
         CouponEntity couponEntity = new CouponEntity();
         couponEntity.setCouponName("满200减40");
-        return R.ok().put("coupns", couponEntity);
+        return R.ok().put("coupns", couponEntity).put("name", name);
     }
     /**
      * 列表
