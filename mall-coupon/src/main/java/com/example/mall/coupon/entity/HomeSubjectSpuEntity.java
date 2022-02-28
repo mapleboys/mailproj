@@ -8,7 +8,7 @@ import java.util.Date;
 import lombok.Data;
 
 /**
- * 涓撻鍟嗗搧
+ * 专题商品
  * 
  * @author gy
  * @email gy@gmail.com
@@ -25,11 +25,11 @@ public class HomeSubjectSpuEntity implements Serializable {
 	@TableId
 	private Long id;
 	/**
-	 * 涓撻鍚嶅瓧
+	 * 专题名字
 	 */
 	private String name;
 	/**
-	 * 涓撻id
+	 * 专题id
 	 */
 	private Long subjectId;
 	/**
@@ -37,7 +37,7 @@ public class HomeSubjectSpuEntity implements Serializable {
 	 */
 	private Long spuId;
 	/**
-	 * 鎺掑簭
+	 * 排序
 	 */
 	private Integer sort;
 

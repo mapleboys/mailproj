@@ -1,20 +1,14 @@
 package com.example.mall.product.controller;
 
-import java.util.Arrays;
-import java.util.Map;
-
-import org.apache.shiro.authz.annotation.RequiresPermissions;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
-
-import com.example.mall.product.entity.BrandEntity;
-import com.example.mall.product.service.BrandService;
 import com.example.common.utils.PageUtils;
 import com.example.common.utils.R;
+import com.example.mall.product.entity.BrandEntity;
+import com.example.mall.product.service.BrandService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.Arrays;
+import java.util.Map;
 
 
 
@@ -26,7 +20,7 @@ import com.example.common.utils.R;
  * @date 2022-02-24 17:29:34
  */
 @RestController
-//@RequestMapping("product/brand")
+@RequestMapping("product/brand")
 public class BrandController {
     @Autowired
     private BrandService brandService;

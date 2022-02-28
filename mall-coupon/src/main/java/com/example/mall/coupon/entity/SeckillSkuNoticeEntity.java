@@ -8,7 +8,7 @@ import java.util.Date;
 import lombok.Data;
 
 /**
- * ç§’æ€å•†å“é€šçŸ¥è®¢é˜…
+ * ÃëÉ±ÉÌÆ·Í¨Öª¶©ÔÄ
  * 
  * @author gy
  * @email gy@gmail.com
@@ -33,19 +33,19 @@ public class SeckillSkuNoticeEntity implements Serializable {
 	 */
 	private Long skuId;
 	/**
-	 * æ´»åŠ¨åœºæ¬¡id
+	 * »î¶¯³¡´Îid
 	 */
 	private Long sessionId;
 	/**
-	 * è®¢é˜…æ—¶é—´
+	 * ¶©ÔÄÊ±¼ä
 	 */
 	private Date subcribeTime;
 	/**
-	 * å‘é€æ—¶é—´
+	 * ·¢ËÍÊ±¼ä
 	 */
 	private Date sendTime;
 	/**
-	 * é€šçŸ¥æ–¹å¼[0-çŸ­ä¿¡ï¼Œ1-é‚®ä»¶]
+	 * Í¨Öª·½Ê½[0-¶ÌĞÅ£¬1-ÓÊ¼ş]
 	 */
 	private Integer noticeType;
 

@@ -8,7 +8,7 @@ import java.util.Date;
 import lombok.Data;
 
 /**
- * ç§’æ€æ´»åŠ¨
+ * ÃëÉ±»î¶¯
  * 
  * @author gy
  * @email gy@gmail.com
@@ -25,27 +25,27 @@ public class SeckillPromotionEntity implements Serializable {
 	@TableId
 	private Long id;
 	/**
-	 * æ´»åŠ¨æ ‡é¢˜
+	 * »î¶¯±êÌâ
 	 */
 	private String title;
 	/**
-	 * å¼€å§‹æ—¥æœŸ
+	 * ¿ªÊ¼ÈÕÆÚ
 	 */
 	private Date startTime;
 	/**
-	 * ç»“æŸæ—¥æœŸ
+	 * ½áÊøÈÕÆÚ
 	 */
 	private Date endTime;
 	/**
-	 * ä¸Šä¸‹çº¿çŠ¶æ€
+	 * ÉÏÏÂÏß×´Ì¬
 	 */
 	private Integer status;
 	/**
-	 * åˆ›å»ºæ—¶é—´
+	 * ´´½¨Ê±¼ä
 	 */
 	private Date createTime;
 	/**
-	 * åˆ›å»ºäºº
+	 * ´´½¨ÈË
 	 */
 	private Long userId;
 

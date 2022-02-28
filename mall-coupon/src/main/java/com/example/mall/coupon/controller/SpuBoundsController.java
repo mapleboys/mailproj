@@ -26,7 +26,7 @@ import com.example.common.utils.R;
  * @date 2022-02-25 09:47:31
  */
 @RestController
-@RequestMapping("coupon/spubounds")
+//@RequestMapping("coupon/spubounds")
 public class SpuBoundsController {
     @Autowired
     private SpuBoundsService spuBoundsService;

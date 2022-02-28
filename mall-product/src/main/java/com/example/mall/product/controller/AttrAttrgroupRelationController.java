@@ -20,7 +20,7 @@ import java.util.Map;
  * @date 2022-02-24 17:29:33
  */
 @RestController
-//@RequestMapping("product/attrattrgrouprelation")
+@RequestMapping("product/attrattrgrouprelation")
 public class AttrAttrgroupRelationController {
     @Autowired
     private AttrAttrgroupRelationService attrAttrgroupRelationService;

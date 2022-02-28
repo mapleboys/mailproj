@@ -2,14 +2,14 @@ package com.example.mall.coupon.entity;
 
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
-
-import java.math.BigDecimal;
-import java.io.Serializable;
-import java.util.Date;
 import lombok.Data;
 
+import java.io.Serializable;
+import java.math.BigDecimal;
+import java.util.Date;
+
 /**
- * ä¼˜æƒ åˆ¸ä¿¡æ¯
+ * ÓÅ»İÈ¯ĞÅÏ¢
  * 
  * @author gy
  * @email gy@gmail.com
@@ -26,79 +26,79 @@ public class CouponEntity implements Serializable {
 	@TableId
 	private Long id;
 	/**
-	 * ä¼˜æƒ å·ç±»å‹[0->å…¨åœºèµ åˆ¸ï¼›1->ä¼šå‘˜èµ åˆ¸ï¼›2->è´­ç‰©èµ åˆ¸ï¼›3->æ³¨å†Œèµ åˆ¸]
+	 * ÓÅ»İ¾íÀàĞÍ[0->È«³¡ÔùÈ¯£»1->»áÔ±ÔùÈ¯£»2->¹ºÎïÔùÈ¯£»3->×¢²áÔùÈ¯]
 	 */
 	private Integer couponType;
 	/**
-	 * ä¼˜æƒ åˆ¸å›¾ç‰‡
+	 * ÓÅ»İÈ¯Í¼Æ¬
 	 */
 	private String couponImg;
 	/**
-	 * ä¼˜æƒ å·åå­—
+	 * ÓÅ»İ¾íÃû×Ö
 	 */
 	private String couponName;
 	/**
-	 * æ•°é‡
+	 * ÊıÁ¿
 	 */
 	private Integer num;
 	/**
-	 * é‡‘é¢
+	 * ½ğ¶î
 	 */
 	private BigDecimal amount;
 	/**
-	 * æ¯äººé™é¢†å¼ æ•°
+	 * Ã¿ÈËÏŞÁìÕÅÊı
 	 */
 	private Integer perLimit;
 	/**
-	 * ä½¿ç”¨é—¨æ§›
+	 * Ê¹ÓÃÃÅ¼÷
 	 */
 	private BigDecimal minPoint;
 	/**
-	 * å¼€å§‹æ—¶é—´
+	 * ¿ªÊ¼Ê±¼ä
 	 */
 	private Date startTime;
 	/**
-	 * ç»“æŸæ—¶é—´
+	 * ½áÊøÊ±¼ä
 	 */
 	private Date endTime;
 	/**
-	 * ä½¿ç”¨ç±»å‹[0->å…¨åœºé€šç”¨ï¼›1->æŒ‡å®šåˆ†ç±»ï¼›2->æŒ‡å®šå•†å“]
+	 * Ê¹ÓÃÀàĞÍ[0->È«³¡Í¨ÓÃ£»1->Ö¸¶¨·ÖÀà£»2->Ö¸¶¨ÉÌÆ·]
 	 */
 	private Integer useType;
 	/**
-	 * å¤‡æ³¨
+	 * ±¸×¢
 	 */
 	private String note;
 	/**
-	 * å‘è¡Œæ•°é‡
+	 * ·¢ĞĞÊıÁ¿
 	 */
 	private Integer publishCount;
 	/**
-	 * å·²ä½¿ç”¨æ•°é‡
+	 * ÒÑÊ¹ÓÃÊıÁ¿
 	 */
 	private Integer useCount;
 	/**
-	 * é¢†å–æ•°é‡
+	 * ÁìÈ¡ÊıÁ¿
 	 */
 	private Integer receiveCount;
 	/**
-	 * å¯ä»¥é¢†å–çš„å¼€å§‹æ—¥æœŸ
+	 * ¿ÉÒÔÁìÈ¡µÄ¿ªÊ¼ÈÕÆÚ
 	 */
 	private Date enableStartTime;
 	/**
-	 * å¯ä»¥é¢†å–çš„ç»“æŸæ—¥æœŸ
+	 * ¿ÉÒÔÁìÈ¡µÄ½áÊøÈÕÆÚ
 	 */
 	private Date enableEndTime;
 	/**
-	 * ä¼˜æƒ ç 
+	 * ÓÅ»İÂë
 	 */
 	private String code;
 	/**
-	 * å¯ä»¥é¢†å–çš„ä¼šå‘˜ç­‰çº§[0->ä¸é™ç­‰çº§ï¼Œå…¶ä»–-å¯¹åº”ç­‰çº§]
+	 * ¿ÉÒÔÁìÈ¡µÄ»áÔ±µÈ¼¶[0->²»ÏŞµÈ¼¶£¬ÆäËû-¶ÔÓ¦µÈ¼¶]
 	 */
 	private Integer memberLevel;
 	/**
-	 * å‘å¸ƒçŠ¶æ€[0-æœªå‘å¸ƒï¼Œ1-å·²å‘å¸ƒ]
+	 * ·¢²¼×´Ì¬[0-Î´·¢²¼£¬1-ÒÑ·¢²¼]
 	 */
 	private Integer publish;
 

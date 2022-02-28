@@ -8,7 +8,7 @@ import java.util.Date;
 import lombok.Data;
 
 /**
- * é¦–é¡µè½®æ’­å¹¿å‘Š
+ * Ê×Ò³ÂÖ²¥¹ã¸æ
  * 
  * @author gy
  * @email gy@gmail.com
@@ -25,47 +25,47 @@ public class HomeAdvEntity implements Serializable {
 	@TableId
 	private Long id;
 	/**
-	 * åå­—
+	 * Ãû×Ö
 	 */
 	private String name;
 	/**
-	 * å›¾ç‰‡åœ°å€
+	 * Í¼Æ¬µØÖ·
 	 */
 	private String pic;
 	/**
-	 * å¼€å§‹æ—¶é—´
+	 * ¿ªÊ¼Ê±¼ä
 	 */
 	private Date startTime;
 	/**
-	 * ç»“æŸæ—¶é—´
+	 * ½áÊøÊ±¼ä
 	 */
 	private Date endTime;
 	/**
-	 * çŠ¶æ€
+	 * ×´Ì¬
 	 */
 	private Integer status;
 	/**
-	 * ç‚¹å‡»æ•°
+	 * µã»÷Êı
 	 */
 	private Integer clickCount;
 	/**
-	 * å¹¿å‘Šè¯¦æƒ…è¿æ¥åœ°å€
+	 * ¹ã¸æÏêÇéÁ¬½ÓµØÖ·
 	 */
 	private String url;
 	/**
-	 * å¤‡æ³¨
+	 * ±¸×¢
 	 */
 	private String note;
 	/**
-	 * æ’åº
+	 * ÅÅĞò
 	 */
 	private Integer sort;
 	/**
-	 * å‘å¸ƒè€…
+	 * ·¢²¼Õß
 	 */
 	private Long publisherId;
 	/**
-	 * å®¡æ ¸è€…
+	 * ÉóºËÕß
 	 */
 	private Long authId;
 

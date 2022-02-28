@@ -9,7 +9,7 @@ import java.util.Date;
 import lombok.Data;
 
 /**
- * å•†å“ä¼šå‘˜ä»·æ ¼
+ * ÉÌÆ·»áÔ±¼Û¸ñ
  * 
  * @author gy
  * @email gy@gmail.com
@@ -30,19 +30,19 @@ public class MemberPriceEntity implements Serializable {
 	 */
 	private Long skuId;
 	/**
-	 * ä¼šå‘˜ç­‰çº§id
+	 * »áÔ±µÈ¼¶id
 	 */
 	private Long memberLevelId;
 	/**
-	 * ä¼šå‘˜ç­‰çº§å
+	 * »áÔ±µÈ¼¶Ãû
 	 */
 	private String memberLevelName;
 	/**
-	 * ä¼šå‘˜å¯¹åº”ä»·æ ¼
+	 * »áÔ±¶ÔÓ¦¼Û¸ñ
 	 */
 	private BigDecimal memberPrice;
 	/**
-	 * å¯å¦å åŠ å…¶ä»–ä¼˜æƒ [0-ä¸å¯å åŠ ä¼˜æƒ ï¼Œ1-å¯å åŠ ]
+	 * ¿É·ñµş¼ÓÆäËûÓÅ»İ[0-²»¿Éµş¼ÓÓÅ»İ£¬1-¿Éµş¼Ó]
 	 */
 	private Integer addOther;
 

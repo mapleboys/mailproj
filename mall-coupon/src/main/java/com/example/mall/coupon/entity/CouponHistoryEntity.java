@@ -8,7 +8,7 @@ import java.util.Date;
 import lombok.Data;
 
 /**
- * ä¼˜æƒ åˆ¸é¢†å–å†å²è®°å½•
+ * ÓÅ»İÈ¯ÁìÈ¡ÀúÊ·¼ÇÂ¼
  * 
  * @author gy
  * @email gy@gmail.com
@@ -25,39 +25,39 @@ public class CouponHistoryEntity implements Serializable {
 	@TableId
 	private Long id;
 	/**
-	 * ä¼˜æƒ åˆ¸id
+	 * ÓÅ»İÈ¯id
 	 */
 	private Long couponId;
 	/**
-	 * ä¼šå‘˜id
+	 * »áÔ±id
 	 */
 	private Long memberId;
 	/**
-	 * ä¼šå‘˜åå­—
+	 * »áÔ±Ãû×Ö
 	 */
 	private String memberNickName;
 	/**
-	 * è·å–æ–¹å¼[0->åå°èµ é€ï¼›1->ä¸»åŠ¨é¢†å–]
+	 * »ñÈ¡·½Ê½[0->ºóÌ¨ÔùËÍ£»1->Ö÷¶¯ÁìÈ¡]
 	 */
 	private Integer getType;
 	/**
-	 * åˆ›å»ºæ—¶é—´
+	 * ´´½¨Ê±¼ä
 	 */
 	private Date createTime;
 	/**
-	 * ä½¿ç”¨çŠ¶æ€[0->æœªä½¿ç”¨ï¼›1->å·²ä½¿ç”¨ï¼›2->å·²è¿‡æœŸ]
+	 * Ê¹ÓÃ×´Ì¬[0->Î´Ê¹ÓÃ£»1->ÒÑÊ¹ÓÃ£»2->ÒÑ¹ıÆÚ]
 	 */
 	private Integer useType;
 	/**
-	 * ä½¿ç”¨æ—¶é—´
+	 * Ê¹ÓÃÊ±¼ä
 	 */
 	private Date useTime;
 	/**
-	 * è®¢å•id
+	 * ¶©µ¥id
 	 */
 	private Long orderId;
 	/**
-	 * è®¢å•å·
+	 * ¶©µ¥ºÅ
 	 */
 	private Long orderSn;
 

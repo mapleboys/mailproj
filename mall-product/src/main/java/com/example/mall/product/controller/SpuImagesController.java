@@ -1,19 +1,14 @@
 package com.example.mall.product.controller;
 
-import java.util.Arrays;
-import java.util.Map;
-
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
-
-import com.example.mall.product.entity.SpuImagesEntity;
-import com.example.mall.product.service.SpuImagesService;
 import com.example.common.utils.PageUtils;
 import com.example.common.utils.R;
+import com.example.mall.product.entity.SpuImagesEntity;
+import com.example.mall.product.service.SpuImagesService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.Arrays;
+import java.util.Map;
 
 
 
@@ -25,7 +20,7 @@ import com.example.common.utils.R;
  * @date 2022-02-24 17:29:32
  */
 @RestController
-//@RequestMapping("product/spuimages")
+@RequestMapping("product/spuimages")
 public class SpuImagesController {
     @Autowired
     private SpuImagesService spuImagesService;

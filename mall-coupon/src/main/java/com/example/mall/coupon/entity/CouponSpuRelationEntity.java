@@ -8,7 +8,7 @@ import java.util.Date;
 import lombok.Data;
 
 /**
- * 浼樻儬鍒镐笌浜у搧鍏宠仈
+ * 优惠券与产品关联
  * 
  * @author gy
  * @email gy@gmail.com
@@ -25,7 +25,7 @@ public class CouponSpuRelationEntity implements Serializable {
 	@TableId
 	private Long id;
 	/**
-	 * 浼樻儬鍒竔d
+	 * 优惠券id
 	 */
 	private Long couponId;
 	/**

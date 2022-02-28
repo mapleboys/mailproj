@@ -1,19 +1,14 @@
 package com.example.mall.coupon.controller;
 
-import java.util.Arrays;
-import java.util.Map;
-
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
-
-import com.example.mall.coupon.entity.CouponEntity;
-import com.example.mall.coupon.service.CouponService;
 import com.example.common.utils.PageUtils;
 import com.example.common.utils.R;
+import com.example.mall.coupon.entity.CouponEntity;
+import com.example.mall.coupon.service.CouponService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.Arrays;
+import java.util.Map;
 
 
 
@@ -30,6 +25,12 @@ public class CouponController {
     @Autowired
     private CouponService couponService;
 
+    @RequestMapping("/member/list")
+    public R memberCoupon() {
+        CouponEntity couponEntity = new CouponEntity();
+        couponEntity.setCouponName("满200减40");
+        return R.ok().put("coupns", couponEntity);
+    }
     /**
      * 列表
      */

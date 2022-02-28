@@ -1,20 +1,14 @@
 package com.example.mall.member.controller;
 
-import java.util.Arrays;
-import java.util.Map;
-
-import org.apache.shiro.authz.annotation.RequiresPermissions;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
-
-import com.example.mall.member.entity.MemberLevelEntity;
-import com.example.mall.member.service.MemberLevelService;
 import com.example.common.utils.PageUtils;
 import com.example.common.utils.R;
+import com.example.mall.member.entity.MemberLevelEntity;
+import com.example.mall.member.service.MemberLevelService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.Arrays;
+import java.util.Map;
 
 
 
@@ -26,7 +20,7 @@ import com.example.common.utils.R;
  * @date 2022-02-25 09:50:07
  */
 @RestController
-//@RequestMapping("member/memberlevel")
+@RequestMapping("member/memberlevel")
 public class MemberLevelController {
     @Autowired
     private MemberLevelService memberLevelService;

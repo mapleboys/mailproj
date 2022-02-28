@@ -8,7 +8,7 @@ import java.util.Date;
 import lombok.Data;
 
 /**
- * ç§’æ€æ´»åŠ¨åœºæ¬¡
+ * ÃëÉ±»î¶¯³¡´Î
  * 
  * @author gy
  * @email gy@gmail.com
@@ -25,23 +25,23 @@ public class SeckillSessionEntity implements Serializable {
 	@TableId
 	private Long id;
 	/**
-	 * åœºæ¬¡åç§°
+	 * ³¡´ÎÃû³Æ
 	 */
 	private String name;
 	/**
-	 * æ¯æ—¥å¼€å§‹æ—¶é—´
+	 * Ã¿ÈÕ¿ªÊ¼Ê±¼ä
 	 */
 	private Date startTime;
 	/**
-	 * æ¯æ—¥ç»“æŸæ—¶é—´
+	 * Ã¿ÈÕ½áÊøÊ±¼ä
 	 */
 	private Date endTime;
 	/**
-	 * å¯ç”¨çŠ¶æ€
+	 * ÆôÓÃ×´Ì¬
 	 */
 	private Integer status;
 	/**
-	 * åˆ›å»ºæ—¶é—´
+	 * ´´½¨Ê±¼ä
 	 */
 	private Date createTime;
 

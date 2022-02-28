@@ -9,7 +9,7 @@ import java.util.Date;
 import lombok.Data;
 
 /**
- * å•†å“spuç§¯åˆ†è®¾ç½®
+ * ÉÌÆ·spu»ý·ÖÉèÖÃ
  * 
  * @author gy
  * @email gy@gmail.com
@@ -30,15 +30,15 @@ public class SpuBoundsEntity implements Serializable {
 	 */
 	private Long spuId;
 	/**
-	 * æˆé•¿ç§¯åˆ†
+	 * ³É³¤»ý·Ö
 	 */
 	private BigDecimal growBounds;
 	/**
-	 * è´­ç‰©ç§¯åˆ†
+	 * ¹ºÎï»ý·Ö
 	 */
 	private BigDecimal buyBounds;
 	/**
-	 * ä¼˜æƒ ç”Ÿæ•ˆæƒ…å†µ[1111ï¼ˆå››ä¸ªçŠ¶æ€ä½ï¼Œä»Žå³åˆ°å·¦ï¼‰;0 - æ— ä¼˜æƒ ï¼Œæˆé•¿ç§¯åˆ†æ˜¯å¦èµ é€;1 - æ— ä¼˜æƒ ï¼Œè´­ç‰©ç§¯åˆ†æ˜¯å¦èµ é€;2 - æœ‰ä¼˜æƒ ï¼Œæˆé•¿ç§¯åˆ†æ˜¯å¦èµ é€;3 - æœ‰ä¼˜æƒ ï¼Œè´­ç‰©ç§¯åˆ†æ˜¯å¦èµ é€ã€çŠ¶æ€ä½0ï¼šä¸èµ é€ï¼Œ1ï¼šèµ é€ã€‘]
+	 * ÓÅ»ÝÉúÐ§Çé¿ö[1111£¨ËÄ¸ö×´Ì¬Î»£¬´ÓÓÒµ½×ó£©;0 - ÎÞÓÅ»Ý£¬³É³¤»ý·ÖÊÇ·ñÔùËÍ;1 - ÎÞÓÅ»Ý£¬¹ºÎï»ý·ÖÊÇ·ñÔùËÍ;2 - ÓÐÓÅ»Ý£¬³É³¤»ý·ÖÊÇ·ñÔùËÍ;3 - ÓÐÓÅ»Ý£¬¹ºÎï»ý·ÖÊÇ·ñÔùËÍ¡¾×´Ì¬Î»0£º²»ÔùËÍ£¬1£ºÔùËÍ¡¿]
 	 */
 	private Integer work;
 

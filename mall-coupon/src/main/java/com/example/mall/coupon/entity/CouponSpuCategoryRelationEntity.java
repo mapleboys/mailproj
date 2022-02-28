@@ -8,7 +8,7 @@ import java.util.Date;
 import lombok.Data;
 
 /**
- * ä¼˜æƒ åˆ¸åˆ†ç±»å…³è”
+ * ÓÅ»İÈ¯·ÖÀà¹ØÁª
  * 
  * @author gy
  * @email gy@gmail.com
@@ -25,15 +25,15 @@ public class CouponSpuCategoryRelationEntity implements Serializable {
 	@TableId
 	private Long id;
 	/**
-	 * ä¼˜æƒ åˆ¸id
+	 * ÓÅ»İÈ¯id
 	 */
 	private Long couponId;
 	/**
-	 * äº§å“åˆ†ç±»id
+	 * ²úÆ··ÖÀàid
 	 */
 	private Long categoryId;
 	/**
-	 * äº§å“åˆ†ç±»åç§°
+	 * ²úÆ··ÖÀàÃû³Æ
 	 */
 	private String categoryName;
 

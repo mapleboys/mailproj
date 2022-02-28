@@ -9,7 +9,7 @@ import java.util.Date;
 import lombok.Data;
 
 /**
- * å•†å“é˜¶æ¢¯ä»·æ ¼
+ * ÉÌÆ·½×Ìİ¼Û¸ñ
  * 
  * @author gy
  * @email gy@gmail.com
@@ -30,19 +30,19 @@ public class SkuLadderEntity implements Serializable {
 	 */
 	private Long skuId;
 	/**
-	 * æ»¡å‡ ä»¶
+	 * Âú¼¸¼ş
 	 */
 	private Integer fullCount;
 	/**
-	 * æ‰“å‡ æŠ˜
+	 * ´ò¼¸ÕÛ
 	 */
 	private BigDecimal discount;
 	/**
-	 * æŠ˜åä»·
+	 * ÕÛºó¼Û
 	 */
 	private BigDecimal price;
 	/**
-	 * æ˜¯å¦å åŠ å…¶ä»–ä¼˜æƒ [0-ä¸å¯å åŠ ï¼Œ1-å¯å åŠ ]
+	 * ÊÇ·ñµş¼ÓÆäËûÓÅ»İ[0-²»¿Éµş¼Ó£¬1-¿Éµş¼Ó]
 	 */
 	private Integer addOther;
 

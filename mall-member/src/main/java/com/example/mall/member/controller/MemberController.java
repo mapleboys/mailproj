@@ -1,20 +1,15 @@
 package com.example.mall.member.controller;
 
-import java.util.Arrays;
-import java.util.Map;
-
-import org.apache.shiro.authz.annotation.RequiresPermissions;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
-
-import com.example.mall.member.entity.MemberEntity;
-import com.example.mall.member.service.MemberService;
 import com.example.common.utils.PageUtils;
 import com.example.common.utils.R;
+import com.example.mall.member.entity.MemberEntity;
+import com.example.mall.member.feign.CouponFeignService;
+import com.example.mall.member.service.MemberService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.Arrays;
+import java.util.Map;
 
 
 
@@ -26,11 +21,19 @@ import com.example.common.utils.R;
  * @date 2022-02-25 09:50:07
  */
 @RestController
-//@RequestMapping("member/member")
+@RequestMapping("member/member")
 public class MemberController {
+
     @Autowired
     private MemberService memberService;
+    @Autowired
+    private CouponFeignService couponFeignService;
 
+    @RequestMapping("/coupons")
+    public R test() {
+        R r = couponFeignService.memberCoupon();
+        return R.ok().put("coupons", r.get("coupns"));
+    }
     /**
      * 列表
      */

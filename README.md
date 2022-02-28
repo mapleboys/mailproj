@@ -13,6 +13,31 @@ docker update mysql --restart=always
 ```text
 systemctl enable docker
 ```
+[使用openFeign进行服务间调用]
+```text
+1. 引入依赖
+<dependency>
+    <groupId>org.springframework.cloud</groupId>
+    <artifactId>spring-cloud-starter-openfeign</artifactId>
+</dependency>
+2. 创建接口, 接口声明方法包含远程服务方法的全部签名
+@FeignClient("mall-coupon")
+public interface CouponFeignService {
+    @RequestMapping("/coupon/coupon/member/list")
+    public R memberCoupon();
+}
+3. 开启服务,在启动程序上加注解
+@EnableFeignClients
+4. 调用方法
+@Autowired
+    private CouponFeignService couponFeignService;
+
+    @RequestMapping("/coupons")
+    public R test() {
+        R r = couponFeignService.memberCoupon();
+        return R.ok().put("coupons", r.get("coupns"));
+    }
+```
 # 资料
 
 # 知识
@@ -21,4 +46,33 @@ systemctl enable docker
 分布式：众多的服务运行在众多的服务器中
 集群：一个服务运行在众多的服务器中
 ```
-
+[mybatis 出错]
+```text
+依赖错误，应该依赖：
+<dependency>
+    <groupId>com.baomidou</groupId>
+    <artifactId>mybatis-plus-boot-starter</artifactId>
+    <version>3.4.1</version>
+</dependency>
+而不是：
+<dependency>
+    <groupId>com.baomidou</groupId>
+    <artifactId>mybatis-plus</artifactId>
+    <version>3.4.1</version>
+</dependency>
+也不是：
+ <dependency>
+      <groupId>org.mybatis.spring.boot</groupId>
+      <artifactId>mybatis-spring-boot-start</artifactId>
+      <version>2.1.1</version>
+</dependency>
+```
+[nacos出现NacosException: Client not connected,current status:STARTING错误]
+```text
+mvn clean
+```
+[LF will be replaced by CRLF in pom.xml.错误]
+```text
+#提交时转换为LF，检出时转换为CRLF
+$ git config --global core.autocrlf true
+```

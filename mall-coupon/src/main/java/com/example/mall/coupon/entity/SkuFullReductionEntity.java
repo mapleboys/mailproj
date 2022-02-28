@@ -2,14 +2,13 @@ package com.example.mall.coupon.entity;
 
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
-
-import java.math.BigDecimal;
-import java.io.Serializable;
-import java.util.Date;
 import lombok.Data;
 
+import java.io.Serializable;
+import java.math.BigDecimal;
+
 /**
- * å•†å“æ»¡å‡ä¿¡æ¯
+ * ÉÌÆ·Âú¼õĞÅÏ¢
  * 
  * @author gy
  * @email gy@gmail.com
@@ -30,15 +29,15 @@ public class SkuFullReductionEntity implements Serializable {
 	 */
 	private Long skuId;
 	/**
-	 * æ»¡å¤šå°‘
+	 * Âú¶àÉÙ
 	 */
 	private BigDecimal fullPrice;
 	/**
-	 * å‡å¤šå°‘
+	 * ¼õ¶àÉÙ
 	 */
 	private BigDecimal reducePrice;
 	/**
-	 * æ˜¯å¦å‚ä¸å…¶ä»–ä¼˜æƒ 
+	 * ÊÇ·ñ²ÎÓëÆäËûÓÅ»İ
 	 */
 	private Integer addOther;
 
