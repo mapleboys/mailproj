@@ -21,4 +21,4 @@ spring:
             - Query=uri, qq
 logging:
   level:
-    root: debug
+    root: info

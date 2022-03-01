@@ -1,27 +1,22 @@
 server:
   port: 7000
-spring:
-  application:
-    name: mall-coupon
-  datasource:
-    driverClassName: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://117.50.177.9:3306/mall_sms?useUnicode=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=Asia/Shanghai
-    username: root
-    password: rootroot123!
-  cloud:
-    nacos:
-      discovery:
-        server-addr: 127.0.0.1:8848
-
-mall:
-  coupon:
-    test:
-      name: conpontest
-
-mybatis-plus:
-  type-aliases-package: com.example.mall.coupon.entity
-  mapper-locations: classpath:**/**/*.xml
-  global-config:
-    db-config:
-      id-type: auto
+#spring:
+#  application:
+#    name: mall-coupon
+#  cloud:
+#    nacos:
+#      discovery:
+#        server-addr: 127.0.0.1:8848
+#
+#mall:
+#  coupon:
+#    test:
+#      name: conpontest
+#
+#mybatis-plus:
+#  type-aliases-package: com.example.mall.coupon.entity
+#  mapper-locations: classpath:**/**/*.xml
+#  global-config:
+#    db-config:
+#      id-type: auto
 
